@@ -1,0 +1,46 @@
+
+<app-cart *ngIf="cartOpened" (closeCart)="closeCart()"></app-cart>
+
+<header class="header">
+  <div class="logo">
+    <a href="index.html"
+      ><h1 class="h1">Интернет-магазин "Творчество"</h1></a
+    >
+  </div>
+
+  <nav>
+    <div class="top-nav">
+      <a href="http://localhost:4200/">Главная</a>
+      <a href="http://localhost:4200/">Каталог</a>
+      <a href="#">Отзывы</a>
+      <a href="#">О нас</a>
+      <a href="#" class="popup-link" (click)="openCart()">Корзина</a>
+    </div>
+  </nav>
+</header>
+
+
+
+<app-products-catalog></app-products-catalog>
+
+<footer class="footer">
+  <div class="wrapper">
+    <div class="social">
+      <a href="">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Instagram-Icon.png/1200px-Instagram-Icon.png"
+          alt=""
+      /></a>
+      <a href=""
+        ><img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Vk_Logo.svg/1024px-Vk_Logo.svg.png"
+          alt=""
+      /></a>
+      <a href=""
+        ><img
+          src="https://www.facebook.com/images/fb_icon_325x325.png"
+          alt=""
+      /></a>
+    </div>
+  </div>
+</footer>

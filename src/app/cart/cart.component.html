@@ -1,0 +1,27 @@
+<div class="popUpParent">
+  <div id="popup_template">
+    <div id="popup" class="popup">
+      <div class="popup_body">
+        <div class="popup_content">
+          <a href="/" class="popup_close" (click)="closeCart.emit()">X</a>
+          <div class="popup_title">Корзина</div>
+          <div class="popup_text">
+            <div class="itemsGood">
+              <span>
+                <span class="NameGood">
+                  "Тестовый продукт"
+                </span>
+                <span class="CountGood">1</span>
+                <span class="PriceGood">2 руб.</span>
+                <button class="DeleteGood" onclick="deleteItem()">Удалить из корзины</button>
+              </span>
+            </div>
+          </div>
+          <div class="button_cont">
+            <button class=" button-order-div button-push">Купить</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
